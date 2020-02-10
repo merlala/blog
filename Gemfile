@@ -33,14 +33,13 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
-# Make errors better looking
-gem 'better_errors', '~> 2.5.1'
-
 # Bulma CSS
 gem 'bulma-rails', '~> 0.8.0'
 
 # Simple Form
 gem 'simple_form', '~> 5.0', '>= 5.0.2'
+
+gem 'better_errors', '~> 2.5.1'
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
@@ -51,9 +50,8 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   # Guard
   gem 'guard', '~> 2.16', '>= 2.16.1'
-
   # Guard Live Reload
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
 end
 
 group :test do
